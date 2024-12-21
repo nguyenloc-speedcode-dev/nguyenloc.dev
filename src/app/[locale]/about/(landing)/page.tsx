@@ -58,10 +58,7 @@ const Index = () => {
                     </div>
                   </div>
                 </div>
-                <div className="working-with-area">
-                  <h2 className="main-common-title">Work Experience ✨</h2>
-                  <WorkExperienceTimeline />
-                </div>
+
                 <div className="working-with-area">
                   <h2 className="main-common-title">Mastering Key Skills ✨</h2>
                   <div className="working-with-main">

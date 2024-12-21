@@ -20,6 +20,7 @@ import "@/styles/fontawsome/css/fontawesome.min.css"
 import '@/styles/work-experience.css'
 import { cookies } from "next/headers";
 import { getLocale } from "next-intl/server";
+import NextTopLoader from "nextjs-toploader";
 
 
 // -----------------------------------------------------
@@ -57,6 +58,17 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased ${theme?.value === 'true' && 'dark-theme'}`}
       >
+        <NextTopLoader
+          color="#1d99ac"
+          initialPosition={0.1}
+          crawlSpeed={300}
+          height={4}
+          crawl={true}
+          showSpinner={false}
+          easing="ease"
+          speed={400}
+          shadow="0 0 10px #00b8d4,0 0 5px #00b8d4"
+        />
         <MainLayout theme={theme?.value === 'true'}>
           {children}
         </MainLayout>

@@ -1,4 +1,5 @@
 import ProfileCard from "@/components/elements/ProfileCard";
+import WorkExperienceTimeline from "@/components/elements/WorkExperienceTimeline";
 import { projectsData } from "@/constant/mockup";
 import Image from "next/image";
 import React from "react";
@@ -12,6 +13,10 @@ const Index = () => {
             <ProfileCard />
           </div>
           <div className="col-xl-8">
+            <div className="working-with-area">
+              <h2 className="main-common-title">Work Experience ✨</h2>
+              <WorkExperienceTimeline />
+            </div>
             <div className="card content-box-card">
               <div className="card-body portfolio-card">
                 <div className="top-info">
@@ -90,7 +95,7 @@ const Index = () => {
                         </div>
                       </div>
                     ))}
-                 
+
                   </div>
                   <div className="pagination">
                     <ul className="list-unstyled">

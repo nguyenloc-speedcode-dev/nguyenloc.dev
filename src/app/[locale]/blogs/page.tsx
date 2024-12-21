@@ -2,6 +2,7 @@
 
 import { getSortedPostsData, parseMarkdownToHtml } from "@/blogs";
 import ProfileCard from "@/components/elements/ProfileCard";
+import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
 async function fetchData() {
@@ -22,7 +23,9 @@ async function fetchData() {
 
 const Index = async () => {
   const blogs = await fetchData()
-
+  console.log('====================================');
+  console.log(blogs);
+  console.log('====================================');
   return (
     <section className="content-box-area mt-4">
       <div className="container">
@@ -54,14 +57,16 @@ const Index = async () => {
                             <div className="article-publications-item">
                               <div className="image">
                                 <a href="article.html" className="d-block w-100">
-                                  <img
-                                    src="assets/img/blog/blog-img-1.jpg"
+                                  <Image
+                                    src={post?.data?.img}
                                     alt="blog-img-1"
                                     className="img-fluid w-100"
+                                    width={312}
+                                    height={208}
                                   />
                                 </a>
                                 <a href="article.html" className="tags">
-                                  <div dangerouslySetInnerHTML={{ __html: post.content }} />
+                                  <div>{post?.data?.slug}</div>
                                 </a>
                               </div>
                               <div className="text">

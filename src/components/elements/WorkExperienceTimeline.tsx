@@ -6,37 +6,42 @@ import tikatika from '@/assets/logo/tikatika-logo.png'
 import playground from "@/assets/logo/playground.png"
 import hopper from '@/assets/logo/hopper.png'
 import clsx from 'clsx'
+import Image from 'next/image'
 
 const WorkExperienceTimeline = () => {
     const workExperienceData = [
         {
-            title: "Web developer",
+            title: "Web App Developer",
             company_name: "HOPPER VN",
             avat_company: hopper,
             time: "09/2023 - 11/2024",
             contents: [
-                "",
-                ""
+                "Participated in outsource projects related to finance and social networks for pets",
+                "Used Next.js framework ,ExpressJS, GraphQL to build projects",
+                "Worked directly with clients on project features, contributing to the successful development and delivery of the project"
             ]
         },
         {
-            title: "Web developer",
+            title: "Web App Developer",
             company_name: "PLAYGROUND",
             avat_company: playground,
             time: "12/2021 - 09/2023",
             contents: [
-                "",
-                ""
+                "Developed Web3 projects in the fields of finance and GameFi",
+                "Used libraries and frameworks such as React.js, Ionic, Capacitor, Next.js, Nest.js, and Ether.js to develop projects",
+                "Maintained and developed new features for projects",
+                "Collaborated with department staff to ensure user-focused design and implementation, ensuring the website was released on time"
+
             ]
         },
         {
-            title: "Web developer",
+            title: "Web App Developer",
             company_name: "TIKATIKA",
             avat_company: tikatika,
             time: "8/2021 - 10/2021",
             contents: [
-                "",
-                ""
+                "Maintained, fixed bugs, and updated the project with new features",
+                "Enhanced skills and gained experience with technologies such as Vue.js and React.js",
             ]
         },
     ]
@@ -56,29 +61,24 @@ const WorkExperienceTimeline = () => {
                                 </a>
                             </div>
                             <div className="timeline-panel">
-                                <div className="timeline-heading">
-                                    <h4>{i.title}</h4>
+                                <div className='my-2 d-flex align-items-center '>
+                                    <Image width={40} height={40} src={i.avat_company} alt={i.title} />
+                                    <div className="timeline-heading">
+                                        <h4>{i.title}</h4>
+                                    </div>
                                 </div>
+
                                 <div className="timeline-body">
                                     <ul style={{ padding: "0 40px" }}>
-                                        <li>
-                                            Maintain assets on network of brand sites utilizing XML, JQuery,
-                                            XSLT &amp; JavaScript.
-                                        </li>
-                                        <li>
-                                            Prioritize and address web requests to ensure requests are
-                                            effectively resolved in a timely manner.
-                                        </li>
-                                        <li>
-                                            Collaborate with department staff to ensure user-focused design
-                                            and launch of interactive web initiatives.
-                                        </li>
-                                        <li>
-                                            Develop, enhance, maintain and support web applications in
-                                            Interwoven TeamSite CMS to evaluate the effectiveness, usability,
-                                            and accessibility of Web sites and make recommendations for
-                                            enhancements to Web sites overall effectiveness.
-                                        </li>
+                                        {
+                                            i.contents.map((content, index) => (
+                                                <li key={index}>
+                                                    {content}
+                                                </li>
+                                            ))
+                                        }
+
+
                                     </ul>
                                 </div>
                                 <div className="timeline-footer">

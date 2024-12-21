@@ -131,8 +131,8 @@ const MainHeader = () => {
 
                 <li className="nav-item">
                   <Link className={clsx("nav-link", {
-                    'active': pathname === '/work'
-                  })} href="/work">
+                    'active': pathname === '/works'
+                  })} href="/works">
                     <svg
                       className="nav-icon"
                       viewBox="0 0 18 17"
@@ -163,8 +163,8 @@ const MainHeader = () => {
                 </li>
                 <li className="nav-item">
                   <Link className={clsx("nav-link", {
-                    "active": pathname === '/blog'
-                  })} href="/blog">
+                    "active": pathname === '/blogs'
+                  })} href="/blogs">
                     <svg
                       className="nav-icon"
                       viewBox="0 0 17 16"
@@ -184,7 +184,7 @@ const MainHeader = () => {
                         strokeLinejoin="round"
                       />
                     </svg>
-                    Blog
+                    Blogs
                   </Link>
                 </li>
                 <li className="nav-item">
