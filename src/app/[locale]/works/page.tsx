@@ -1,10 +1,16 @@
+'use client'
+
 import ProfileCard from "@/components/elements/ProfileCard";
+import ReviewProject from "@/components/elements/ReviewProject";
 import WorkExperienceTimeline from "@/components/elements/WorkExperienceTimeline";
 import { projectsData } from "@/constant/mockup";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 
 const Index = () => {
+
+  const [isShowReview, setIsShowReview] = useState<string | boolean>(false)
+
   return (
     <section className="content-box-area mt-4">
       <div className="container">
@@ -42,8 +48,8 @@ const Index = () => {
                               alt={i.title}
                               className="img-fluid w-100"
                             />
-                            <a
-                              href="#"
+                            <div
+                              onClick={() => setIsShowReview(i.link)}
                               className="gallery-popup full-image-preview parent-container"
                             >
                               <svg
@@ -58,46 +64,23 @@ const Index = () => {
                               >
                                 <path d="M10 4.167v11.666M4.167 10h11.666" />
                               </svg>
-                            </a>
+                            </div>
                           </div>
                           <div className="text">
                             <div className="info">
-                              <a href="#" className="title">
+                              <div className="title">
                                 {i.title}
-                              </a>
+                              </div>
                               <p className="subtitle">{i.tech}</p>
                             </div>
-                            <div className="visite-btn">
-                              <a href="#">
-                                Visit Site
-                                <svg
-                                  className="arrow-up"
-                                  width={14}
-                                  height={15}
-                                  viewBox="0 0 14 15"
-                                  fill="none"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                >
-                                  <path
-                                    d="M9.91634 4.5835L4.08301 10.4168"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                  />
-                                  <path
-                                    d="M4.66699 4.5835H9.91699V9.8335"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                  />
-                                </svg>
-                              </a>
-                            </div>
+
                           </div>
                         </div>
                       </div>
                     ))}
 
                   </div>
-                  <div className="pagination">
+                  {/* <div className="pagination">
                     <ul className="list-unstyled">
                       <li className="prev">
                         <button>
@@ -173,7 +156,8 @@ const Index = () => {
                         </button>
                       </li>
                     </ul>
-                  </div>
+                  </div> */}
+                  <ReviewProject linkIframe={isShowReview} onClose={() => setIsShowReview(false)} />
                 </div>
                 <div className="work-together-slider">
                   <div className="slider-main d-flex gap-4 align-items-center">

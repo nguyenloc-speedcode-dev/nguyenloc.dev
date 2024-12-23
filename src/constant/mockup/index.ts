@@ -106,15 +106,18 @@ export const projectsData = [
     img: aihome,
     title: "Ai Homes",
     tech: "NextJs,TaiwindCss,Redux Toolkit",
+    link: "https://www.wagglylife.com/",
   },
   {
     img: wagglilife,
     title: "Waggly Life",
     tech: "NextJs,TaiwindCss,GraphQL,Redux",
+    link: "https://www.wagglylife.com/",
   },
   {
     img: friendify,
     title: "Friendify AI",
     tech: "NextJs,TaiwindCss,Redux Thunk",
+    link: "https://app.friendify.ai/",
   },
 ];

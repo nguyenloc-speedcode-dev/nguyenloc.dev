@@ -18,6 +18,8 @@ import "@/styles/responsive.css"
 import "@/styles/fontawsome/css/all.min.css"
 import "@/styles/fontawsome/css/fontawesome.min.css"
 import '@/styles/work-experience.css'
+import '@/styles/custom.css'
+
 import { cookies } from "next/headers";
 import { getLocale } from "next-intl/server";
 import NextTopLoader from "nextjs-toploader";
