@@ -4,8 +4,11 @@ import React from "react";
 import profile_image from "@/assets/images/profile.png";
 import Image from "next/image";
 import { useCopyToClipboard } from "@uidotdev/usehooks";
+import { useTranslations } from "next-intl";
 const ProfileCard = () => {
   const [copiedText, copyToClipboard] = useCopyToClipboard();
+  const t = useTranslations('profile')
+
 
   return (
     <div className="card profile-card">
@@ -21,13 +24,13 @@ const ProfileCard = () => {
         </div>
         <div className="text">
           <h3 className="card-title">Nguyen Thanh Loc 👋</h3>
-          <p>
-            I am a <span>
-              Web App Developer
-            </span>  with over
-            <span>
-              3 years of experience </span>
-            in building and developing web app products.
+          <p dangerouslySetInnerHTML={{
+            __html: t('aboutMe', {
+              role: 'Web App Developer',
+              experience: '3 years of experience',
+            })
+          }}>
+
 
           </p>
           <div className="common-button-groups">
@@ -62,7 +65,7 @@ const ProfileCard = () => {
                   strokeLinejoin="round"
                 />
               </svg>
-              Book A call
+              {t('book_a_call')}
             </a>
             <button
               className="btn btn-copy"

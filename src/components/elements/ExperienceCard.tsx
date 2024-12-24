@@ -5,8 +5,10 @@ import playground from "@/assets/logo/playground.png"
 import hopper from '@/assets/logo/hopper.png'
 
 import Image from 'next/image'
+import { useTranslations } from 'next-intl'
 
 const ExperienceCard = () => {
+    const t = useTranslations()
     const experienceData = [
         {
             date: "8/2021 - 10/2021",
@@ -30,7 +32,7 @@ const ExperienceCard = () => {
     return (
         <div className="card">
             <div className="card-body work-experiance-card">
-                <h3 className="card-title">Work Experience</h3>
+                <h3 className="card-title">{t('heading.work_experience')}</h3>
                 <div className="work-experiance-main">
                     <ul className="work-experiance-slider list-unstyled">
                         {

@@ -4,12 +4,13 @@ import ProfileCard from "@/components/elements/ProfileCard";
 import WorkExperienceTimeline from "@/components/elements/WorkExperienceTimeline";
 import { SkillData } from "@/constant/mockup";
 import { useStore } from "@/store/useStore";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
 const Index = () => {
-
+  const t = useTranslations()
   const { isDarkMode } = useStore()
 
   return (
@@ -27,18 +28,19 @@ const Index = () => {
                     <h1 className="main-title">
                       Hi, This Is <span>Nguyen Thanh Loc</span> 👋
                     </h1>
-                    <p>
-                      I am a <span>
-                        Web App Developer
-                      </span>  with over
-                      <span>
-                        3 years of experience </span>
-                      in building and developing web app products.
+                    <p dangerouslySetInnerHTML={{
+                      __html: t('profile.aboutMe', {
+                        role: 'Web App Developer',
+                        experience: '3 years of experience',
+                      })
+                    }}>
+
+
                     </p>
                   </div>
                   <div className="available-btn">
                     <span>
-                      <i className="fas fa-circle" /> Available For Hire
+                      <i className="fas fa-circle" /> {t("heading.available_for_hire")}
                     </span>
                   </div>
                 </div>
@@ -60,7 +62,7 @@ const Index = () => {
                 </div>
 
                 <div className="working-with-area">
-                  <h2 className="main-common-title">Mastering Key Skills ✨</h2>
+                  <h2 className="main-common-title">{t('heading.mastering_key_skills')} ✨</h2>
                   <div className="working-with-main">
                     {SkillData.map((i, index) => (
                       <div className="items" key={index} style={{}}>

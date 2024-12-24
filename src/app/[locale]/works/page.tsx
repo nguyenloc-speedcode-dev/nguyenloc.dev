@@ -4,11 +4,12 @@ import ProfileCard from "@/components/elements/ProfileCard";
 import ReviewProject from "@/components/elements/ReviewProject";
 import WorkExperienceTimeline from "@/components/elements/WorkExperienceTimeline";
 import { projectsData } from "@/constant/mockup";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import React, { useState } from "react";
 
 const Index = () => {
-
+  const t = useTranslations()
   const [isShowReview, setIsShowReview] = useState<string | boolean>(false)
 
   return (
@@ -20,10 +21,10 @@ const Index = () => {
           </div>
           <div className="col-xl-8">
             <div className="working-with-area">
-              <h2 className="main-common-title">Work Experience ✨</h2>
+              <h2 className="main-common-title">{t('heading.work_experience')} ✨</h2>
               <WorkExperienceTimeline />
             </div>
-            <div className="card content-box-card">
+            <div className="card content-box-card" id="projects">
               <div className="card-body portfolio-card">
                 <div className="top-info">
                   <div className="text">

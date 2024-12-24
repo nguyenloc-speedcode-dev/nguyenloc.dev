@@ -1,8 +1,8 @@
 import { notFound } from "next/navigation";
 import { getRequestConfig } from "next-intl/server";
+import { Locale } from "./IMessage";
 
 // Can be imported from a shared config
-export type Locale = "en" | "vi";
 
 const locales = ["en", "vi"];
 

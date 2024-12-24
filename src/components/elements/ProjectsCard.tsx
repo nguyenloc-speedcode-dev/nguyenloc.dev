@@ -8,6 +8,7 @@ import friendify from "@/assets/images/portfolio/friendify.png";
 import Image from "next/image";
 import ReviewProject from "./ReviewProject";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 const cardData = [
   {
@@ -28,6 +29,7 @@ const cardData = [
 ];
 
 const ProjectsCard = () => {
+  const t = useTranslations()
 
   const [isShowReview, setIsShowReview] = useState<string | boolean>(false)
 
@@ -35,9 +37,9 @@ const ProjectsCard = () => {
     <div className="card card-projects">
       <div className="card-body">
         <h3 className="card-title">
-          Recent Projects{" "}
-          <Link className="link-btn" href="/works">
-            All Projects
+          {t("heading.recent_projects")}{" "}
+          <Link className="link-btn" href="/works#projects">
+            {t('heading.all_projects')}
             <svg
               className="icon"
               width={20}

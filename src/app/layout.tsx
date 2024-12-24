@@ -21,8 +21,9 @@ import '@/styles/work-experience.css'
 import '@/styles/custom.css'
 
 import { cookies } from "next/headers";
-import { getLocale } from "next-intl/server";
+import { getLocale, getMessages } from "next-intl/server";
 import NextTopLoader from "nextjs-toploader";
+import { NextIntlClientProvider } from "next-intl";
 
 
 // -----------------------------------------------------
@@ -44,7 +45,7 @@ export const metadata: Metadata = {
   description: "Web App Developer with over 3 years of experience in building and developing web applications.",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
@@ -54,7 +55,7 @@ export default function RootLayout({
   const cookieStore = cookies();
   const theme = cookieStore.get('theme')
 
-
+  const messages = await getMessages();
   return (
     <html lang="en" data-theme={theme?.value === 'true'}>
       <body
@@ -71,9 +72,12 @@ export default function RootLayout({
           speed={400}
           shadow="0 0 10px #00b8d4,0 0 5px #00b8d4"
         />
-        <MainLayout theme={theme?.value === 'true'}>
-          {children}
-        </MainLayout>
+        <NextIntlClientProvider messages={messages}>
+          <MainLayout theme={theme?.value === 'true'}>
+            {children}
+          </MainLayout>
+        </NextIntlClientProvider>
+
 
       </body>
     </html>

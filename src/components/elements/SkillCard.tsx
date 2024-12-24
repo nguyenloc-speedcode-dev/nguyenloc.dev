@@ -7,9 +7,11 @@ import { SkillData } from "@/constant/mockup";
 import Link from "next/link";
 import { useStore } from "@/store/useStore";
 import { useBreakpoint } from "@/hooks/useBreakpoint";
+import { useTranslations } from "next-intl";
 
 const SkillCard = () => {
   const breakpoint = useBreakpoint()
+  const t = useTranslations()
   const cardData = breakpoint === 'mobile' ? SkillData.slice(0, 9) : SkillData.slice(0, 15);
   return (
     <div className="card expertise-card">
@@ -44,7 +46,7 @@ const SkillCard = () => {
               className="link-btn d-flex  justify-content-end"
               href="/about"
             >
-              All Skill
+              {t('heading.my_skill_area')}
               <svg
                 className="icon"
                 width={20}
