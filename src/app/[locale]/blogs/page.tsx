@@ -2,7 +2,9 @@
 
 import { getSortedPostsData, parseMarkdownToHtml } from "@/blogs";
 import ProfileCard from "@/components/elements/ProfileCard";
+import { ROUTES } from "@/routes";
 import Image from "next/image";
+import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
 async function fetchData() {
@@ -56,7 +58,7 @@ const Index = async () => {
                           <div className="col-xl-6 col-lg-4 col-md-6" key={index}>
                             <div className="article-publications-item">
                               <div className="image">
-                                <a href="article.html" className="d-block w-100">
+                                <Link href={ROUTES.BLOGS + '/121'} className="d-block w-100">
                                   <Image
                                     src={post?.data?.img}
                                     alt="blog-img-1"
@@ -64,15 +66,15 @@ const Index = async () => {
                                     width={312}
                                     height={208}
                                   />
-                                </a>
-                                <a href="article.html" className="tags">
+                                </Link>
+                                <Link href={ROUTES.BLOGS + '/121'} className="tags">
                                   <div>{post?.data?.slug}</div>
-                                </a>
+                                </Link>
                               </div>
                               <div className="text">
-                                <a href="article.html" className="title">
+                                <Link href={ROUTES.BLOGS + '/121'} className="title">
                                   {post.data.title}
-                                </a>
+                                </Link>
                                 <ul className="list-unstyled">
                                   <li>15 min read</li>
                                   <li>{post.data.date}</li>

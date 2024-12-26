@@ -15,16 +15,21 @@ import AboutIcon from "../icons/about";
 import HomeIcon from "../icons/home";
 import BlogIcon from "../icons/blogs";
 import ContactIcon from "../icons/contact";
+import SwitchLanguage from "../elements/SwitchLanguage";
 
 
 const MainHeader = () => {
   const pathname = usePathname();
+
+
   const t = useTranslations("header")
   const [isShowMenuMobile, setIsShowMenuMobile] = useState(false)
 
   const { isDarkMode, toggleDarkMode } = useStore();
 
   const [_, setValueStorage] = useLocalStorage("darkMode");
+
+
 
   const _dataMainHeader = [
     {
@@ -193,6 +198,7 @@ const MainHeader = () => {
                     </small>
                   </span>
                 </button>
+                <SwitchLanguage />
                 <a href="contact.html" className="lets-talk-btn">
                   Let's Talk
                   <svg

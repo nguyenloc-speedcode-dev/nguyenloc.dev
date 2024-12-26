@@ -1,8 +1,5 @@
 import type { Metadata } from "next";
-
-
 import localFont from "next/font/local";
-
 import MainLayout from "@/components/layouts/MainLayout";
 
 
@@ -21,7 +18,7 @@ import '@/styles/work-experience.css'
 import '@/styles/custom.css'
 
 import { cookies } from "next/headers";
-import { getLocale, getMessages } from "next-intl/server";
+import { getMessages } from "next-intl/server";
 import NextTopLoader from "nextjs-toploader";
 import { NextIntlClientProvider } from "next-intl";
 
@@ -47,17 +44,23 @@ export const metadata: Metadata = {
 
 export default async function RootLayout({
   children,
+
 }: Readonly<{
   children: React.ReactNode;
+
 }>) {
+
 
 
   const cookieStore = cookies();
   const theme = cookieStore.get('theme')
 
   const messages = await getMessages();
+
+
+
   return (
-    <html lang="en" data-theme={theme?.value === 'true'}>
+    <html data-theme={theme?.value === 'true'}>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased ${theme?.value === 'true' && 'dark-theme'}`}
       >
