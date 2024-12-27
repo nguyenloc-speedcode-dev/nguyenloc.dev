@@ -5,6 +5,8 @@ export interface IBlog {
     title?: string;
     slug?: string;
     date?: string;
+    img?: string;
+    category?: string;
   };
   content: string;
 }

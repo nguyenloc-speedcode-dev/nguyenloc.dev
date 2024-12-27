@@ -1,11 +1,9 @@
 
 
-import { getSortedPostsData, parseMarkdownToHtml } from "@/blogs";
+import { getSortedPostsData } from "@/blogs";
 import ProfileCard from "@/components/elements/ProfileCard";
-import { ROUTES } from "@/routes";
-import Image from "next/image";
-import Link from "next/link";
-import React, { useEffect, useState } from "react";
+import React from "react";
+import BlogCard from "./components/BlogCard";
 
 async function fetchData() {
   const postsData = await getSortedPostsData();
@@ -13,7 +11,6 @@ async function fetchData() {
   // Convert markdown to HTML for each post
   const postsWithHtml = await Promise.all(
     postsData.map(async (post) => {
-
       return {
         ...post,
       };
@@ -25,9 +22,7 @@ async function fetchData() {
 
 const Index = async () => {
   const blogs = await fetchData()
-  console.log('====================================');
-  console.log(blogs);
-  console.log('====================================');
+
   return (
     <section className="content-box-area mt-4">
       <div className="container">
@@ -56,38 +51,14 @@ const Index = async () => {
                       {
                         blogs.map((post: any, index: number) => (
                           <div className="col-xl-6 col-lg-4 col-md-6" key={index}>
-                            <div className="article-publications-item">
-                              <div className="image">
-                                <Link href={ROUTES.BLOGS + '/121'} className="d-block w-100">
-                                  <Image
-                                    src={post?.data?.img}
-                                    alt="blog-img-1"
-                                    className="img-fluid w-100"
-                                    width={312}
-                                    height={208}
-                                  />
-                                </Link>
-                                <Link href={ROUTES.BLOGS + '/121'} className="tags">
-                                  <div>{post?.data?.slug}</div>
-                                </Link>
-                              </div>
-                              <div className="text">
-                                <Link href={ROUTES.BLOGS + '/121'} className="title">
-                                  {post.data.title}
-                                </Link>
-                                <ul className="list-unstyled">
-                                  <li>15 min read</li>
-                                  <li>{post.data.date}</li>
-                                </ul>
-                              </div>
-                            </div>
+                            <BlogCard post={post} />
                           </div>
                         ))
                       }
                     </div>
                   </div>
                 </div>
-                <div className="pagination">
+                {/* <div className="pagination">
                   <ul className="list-unstyled">
                     <li className="prev">
                       <button>
@@ -163,7 +134,7 @@ const Index = async () => {
                       </button>
                     </li>
                   </ul>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

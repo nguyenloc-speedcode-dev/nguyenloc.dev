@@ -1,6 +1,7 @@
 ---
 title: NGÀNH IT RẤT RỘNG – BẠN ĐANG Ở ĐÂU?
-slug: Chuyện linh tinh
+slug: nganh_it_rat_rong_ban_dang_o_dau
+category: Chuyện trò linh tinh
 date: 26/12/2024
 img: /images/blogs/nganh_it_rat_rong_ban_dang_o_dau.webp
 ---
@@ -29,18 +30,18 @@ Thông qua câu chuyện trên, mình muốn nhắn nhủ một điều rất qu
 
 ## NỘI DUNG BÀI VIẾT
 
-- [#1 MÌNH SẼ PHÂN LOẠI MỘT VÀI NGÀNH CHÍNH HIỆN NAY](#1-minh-se-phan-loai-mot-vai-nganh-chinh-hien-nay)
+- [1. MÌNH SẼ PHÂN LOẠI MỘT VÀI NGÀNH CHÍNH HIỆN NAY](#1-minh-se-phan-loai-mot-vai-nganh-chinh-hien-nay)
   - [Lập trình web](#lap-trinh-web)
   - [Lập trình mobile](#lap-trinh-mobile)
   - [Lập trình nhúng](#lap-trinh-nhung)
   - [Tester](#tester)
   - [Một số ngành khác](#mot-so-nganh-khac)
-- [#2 CÁI THỨ MÀ BẠN MONG CHỜ – ROADMAP](#2-cai-thu-ma-ban-mong-cho-roadmap)
-- [# KẾT](#ket)
+- [2.CÁI THỨ MÀ BẠN MONG CHỜ – ROADMAP](#2-cai-thu-ma-ban-mong-cho-roadmap)
+- [3.KẾT](#ket)
 
 ---
 
-### #1 MÌNH SẼ PHÂN LOẠI MỘT VÀI NGÀNH CHÍNH HIỆN NAY
+### 1.MÌNH SẼ PHÂN LOẠI MỘT VÀI NGÀNH CHÍNH HIỆN NAY
 
 À, trước khi đi vào các ngành chính, mình muốn giới thiệu bạn một tip nhỏ. Với mỗi chuyên ngành (cụ thể là công việc), bạn hãy dùng trang [ITviec](https://itviec.com/). Dùng trang này để làm gì? **Tra cứu!** Mình sẽ đưa cho các bạn một số **từ khóa**. Bạn lên đây tra cứu thông tin. Để biết các công ty ngoài kia **TUYỂN GÌ, CẦN GÌ**. Và biết được lượng công việc nhiều hay ít. Từ đó đưa ra những định hướng cho bản thân mình.
 
@@ -50,7 +51,7 @@ Lập trình web chưa bao giờ hết hot từ xưa đến nay trong ngành IT.
 
 Cho nên lập trình web **LUÔN LÀ NGÀNH HOT!** Công việc ở đây cực kì nhiều. Lương ở đây cũng rất cao, nhưng tùy vào bạn. Thật tế bạn giỏi thì đi đâu cũng lương cao thôi (câu này ai cũng nói, mà đúng thật).
 
-![Trở thành web developer](https://lenhatthanh.com/wp-content/uploads/2019/08/tro-thanh-web-developer.jpg)
+![Trở thành web developer](/images/blogs/tro_thanh_wev_developer.jpeg)
 
 Lập trình web được chia ra làm 2 nhánh chính: **Back-end** và **Front-end**. Trước tiên, nếu bạn chưa hiểu một website hoạt động như thế nào. Thì hãy tìm hiểu thêm trên google (vì nó rất dễ hiểu).
 
@@ -61,7 +62,7 @@ Ngoài ra, nếu bạn có khả năng đảm nhận cả Front-end và Back-end
 
 Để bạn có thể bước vào ngành phát triển web. Bạn cần xác định mình muốn làm Font-End hay Back-End hay full-stack. Rồi tiếp đến là chọn cho mình một ngôn ngữ chính để luyện. Nhiều khi bạn đã định hướng là vào Back-End. Nhưng nhiều bạn còn phân vân chưa biết đi theo ngôn ngữ nào đâu. Người thì chọn .NET, người thì PHP, NodeJS, JAVA,…
 
-Phải nói là có quá nhiều thứ trong lập trình web. Hãy cố gắng để có [một background IT tốt](https://lenhatthanh.com/dung-lang-phi-khoang-thoi-gian-hoc-dai-hoc-cua-ban/) nhất có thể nhé.
+Phải nói là có quá nhiều thứ trong lập trình web. Hãy cố gắng để có [một background IT tốt](https://nguyenloc.dev/) nhất có thể nhé.
 
 #### Lập trình mobile
 
@@ -69,5 +70,5 @@ Cũng giống như web, bạn nhìn thấy và sử dụng các ứng dụng mob
 
 Về phương diện tiếp cận cũng khá giống bên web. Ban đầu khi tiếp cận cũng tương đối dễ, nhưng về sau để trở nên thành thạo thì cũng rất phức tạp.
 
-![Trở thành mobile developer](https://lenhatthanh.com/wp-content/uploads/2019/08/tro-thanh-mobile-developer.jpg)
+![Trở thành mobile developer](/images/blogs/tro_thanh_mobile_developer.jpeg)
 
