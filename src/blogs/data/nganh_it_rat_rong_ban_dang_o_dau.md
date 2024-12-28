@@ -1,5 +1,5 @@
 ---
-title: NGÀNH IT RẤT RỘNG – BẠN ĐANG Ở ĐÂU?
+title: Ngành IT rất rộng lớn bạn đang ở đâu?
 slug: nganh_it_rat_rong_ban_dang_o_dau
 category: Chuyện trò linh tinh
 date: 26/12/2024

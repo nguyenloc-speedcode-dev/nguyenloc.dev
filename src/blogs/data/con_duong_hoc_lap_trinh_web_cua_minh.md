@@ -2,7 +2,7 @@
 title: Hành trình trở thành Web Developer
 slug: con_duong_hoc_lap_trinh_web_cua_minh
 category: Chuyện trò linh tinh
-date: 27/12/2024
+date: 29/12/2024
 img: /images/blogs/con_duong_hoc_lap_trinh_web_cua_minh.jpeg
 ---
 
