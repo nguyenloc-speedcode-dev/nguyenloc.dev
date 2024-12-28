@@ -18,7 +18,7 @@ import '@/styles/work-experience.css'
 import '@/styles/custom.css'
 
 import { cookies } from "next/headers";
-import { getMessages } from "next-intl/server";
+import { getLocale, getMessages } from "next-intl/server";
 import NextTopLoader from "nextjs-toploader";
 import { NextIntlClientProvider } from "next-intl";
 
@@ -37,10 +37,19 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
+
+type Props = {
+  params: Promise<{ id: string }>
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>
+}
+
 export const metadata: Metadata = {
   title: "Portfolio | Web App Developer",
   description: "Web App Developer with over 3 years of experience in building and developing web applications.",
 };
+
+
+
 
 export default async function RootLayout({
   children,

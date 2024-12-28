@@ -5,6 +5,13 @@ import { data } from 'autoprefixer'
 import { notFound } from 'next/navigation'
 import React from 'react'
 import RelatedPost from '../components/RelatedPost'
+import { Metadata, ResolvingMetadata } from 'next'
+
+
+type Props = {
+    params: Promise<{ articleId: string }>
+    searchParams: Promise<{ [key: string]: string | string[] | undefined }>
+}
 
 const getBlog = async (slug: string) => {
     try {
@@ -13,6 +20,23 @@ const getBlog = async (slug: string) => {
         return blog
     } catch (error) {
         notFound()
+    }
+}
+
+export async function generateMetadata(
+    { params, searchParams }: Props,
+    parent: ResolvingMetadata
+): Promise<Metadata> {
+    // read route params
+    const articleId = (await params).articleId
+    const blog = await getBlog(articleId)
+    const previousImages = (await parent).openGraph?.images || []
+
+    return {
+        title: blog.data.title,
+        openGraph: {
+            images: [`${blog.data.img}`, ...previousImages],
+        },
     }
 }
 
