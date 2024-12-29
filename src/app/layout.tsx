@@ -47,6 +47,9 @@ export const metadata: Metadata = {
   title: "Portfolio | Web App Developer",
   description: "Web App Developer with over 3 years of experience in building and developing web applications, specializing in JavaScript, React, Next.js, and health tech solutions.",
   keywords: ['Web App Developer', 'JavaScript', 'React', 'Next.js', 'Front-End Development', 'Full-Stack Development', 'HealthTech', 'Biodiversity', 'Software Development', 'UI/UX Design', 'Web Applications', 'API Development'],
+  verification: {
+    google: "zUSnbL8nttNPqeEAuv0ewCY5-G4fjM7saufqMHkbaA4",
+  },
 };
 
 
