@@ -34,7 +34,8 @@ export async function generateMetadata(
 
     return {
         title: blog.data.title,
-        description: blog.content,
+        description: blog.data.description_short,
+        keywords: blog.data.key,
         openGraph: {
             images: [`${blog.data.img}`, ...previousImages],
         },

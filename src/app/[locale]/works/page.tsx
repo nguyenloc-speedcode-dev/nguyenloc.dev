@@ -4,12 +4,14 @@ import ProfileCard from "@/components/elements/ProfileCard";
 import ReviewProject from "@/components/elements/ReviewProject";
 import WorkExperienceTimeline from "@/components/elements/WorkExperienceTimeline";
 import { projectsData } from "@/constant/mockup";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
 import React, { useState } from "react";
 
+
 const Index = () => {
   const t = useTranslations()
+  const locale = useLocale()
   const [isShowReview, setIsShowReview] = useState<string | boolean>(false)
 
   return (
@@ -29,7 +31,17 @@ const Index = () => {
                 <div className="top-info">
                   <div className="text">
                     <h1 className="main-title">
-                      Check Out My Latest <span>Projects</span>
+                      {
+                        locale == 'en' ?
+                          <>
+                            Check Out My Latest <span> Projects</span>
+                          </>
+                          :
+                          <>
+                            Khám phá <span> Dự án</span> mới nhất của tôi
+                          </>
+                      }
+
                     </h1>
                     <p>
                       I'm here to help if you're searching for a product

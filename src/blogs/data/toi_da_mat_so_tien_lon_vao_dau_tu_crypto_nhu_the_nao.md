@@ -4,6 +4,8 @@ slug: toi_da_mat_so_tien_lon_vao_dau_tu_crypto_nhu_the_nao
 category: Chuyện trò linh tinh
 date: 29/12/2024
 img: /images/blogs/toi_da_mat_so_tien_lon_vao_dau_tu_crypto_nhu_the_nao.jpeg
+key: [crypto, đầu tư, tài chính cá nhân, cháy tài khoản, câu chuyện đầu tư]
+description_short: Câu chuyện kể về hành trình đầu tư crypto của tôi, từ những lần cháy tài khoản đến bài học nhớ đời về lòng tham, sự kiên nhẫn và kiểm soát cảm xúc.
 ---
 
 Lần đầu tiên tôi biết đến Crypto là vào năm 2021, khi chỉ nghe loáng thoáng về Bitcoin và tự hỏi: 'Bitcoin là gì thế taaaa?' Chính câu hỏi đó đã khơi dậy sự tò mò, khiến tôi bắt đầu tìm hiểu về Bitcoin, hay còn gọi là BTC. Với nền tảng là một Dev, việc khám phá này đối với tôi khá dễ dàng và nhanh chóng. Oh, tôi nhận ra rằng BTC là một loại tiền ảo, và rất nhiều người đã nhanh chóng trở nên giàu có nhờ việc đầu tư vào những đồng tiền ảo này. Chính vì thế với khát vọng giàu nhanh của tôi, tôi đã đã bước chân vào con đường đầu tư tài chính.

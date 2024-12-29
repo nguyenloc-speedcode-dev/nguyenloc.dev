@@ -4,8 +4,12 @@ import { getSortedPostsData } from "@/blogs";
 import ProfileCard from "@/components/elements/ProfileCard";
 import React from "react";
 import BlogCard from "./components/BlogCard";
+import { getTranslations } from "next-intl/server";
+
 
 async function fetchData() {
+
+
   const postsData = await getSortedPostsData();
 
   // Convert markdown to HTML for each post
@@ -22,6 +26,7 @@ async function fetchData() {
 
 const Index = async () => {
   const blogs = await fetchData()
+  const t = await getTranslations('blog')
 
   return (
     <section className="content-box-area mt-4">
@@ -36,12 +41,10 @@ const Index = async () => {
                 <div className="top-info">
                   <div className="text">
                     <h1 className="main-title">
-                      My Recent Article and Publications
+                      {t('title')}
                     </h1>
                     <p>
-                      I'm here to help if you're searching for a product
-                      designer to bring your idea to life or a design partner to
-                      help take your business to the next level.
+                      {t('description')}
                     </p>
                   </div>
                 </div>

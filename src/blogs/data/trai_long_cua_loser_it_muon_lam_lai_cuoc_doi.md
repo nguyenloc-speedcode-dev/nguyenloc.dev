@@ -4,6 +4,8 @@ slug: trai_long_cua_loser_it_muon_lam_lai_cuoc_doi
 category: Chuyện trò linh tinh
 date: 28/12/2024
 img: /images/blogs/trai_long_cua_loser_it_muon_lam_lai_cuoc_doi.jpeg
+key: [Loser IT, ngành IT, thất bại, làm lại cuộc đời, tâm sự IT]
+description_short: Câu chuyện chân thật về hành trình vượt qua thất bại của một người làm ngành IT, từ hoài nghi bản thân đến quyết tâm làm lại cuộc đời.
 ---
 
 Người ta thường nói ngành IT là “miền đất hứa” – nơi cơ hội nhiều như sao trên trời, chỉ cần bạn có đam mê và kiên trì, bạn sẽ thành công. Nhưng thực tế không phải lúc nào cũng đẹp như câu chuyện truyền cảm hứng trên mạng.

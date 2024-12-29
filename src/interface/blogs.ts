@@ -7,6 +7,8 @@ export interface IBlog {
     date?: string;
     img?: string;
     category?: string;
+    key?: string;
+    description_short?: string;
   };
   content: string;
 }

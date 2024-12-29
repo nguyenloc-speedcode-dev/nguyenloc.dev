@@ -4,6 +4,9 @@ slug: con_duong_hoc_lap_trinh_web_cua_minh
 category: Chuyện trò linh tinh
 date: 29/12/2024
 img: /images/blogs/con_duong_hoc_lap_trinh_web_cua_minh.jpeg
+key: ["web development", "lộ trình học lập trình", "frontend", "backend", "fullstack"]
+description_short: "Hành trình từ những bước chân đầu tiên với lập trình C++ đến việc chinh phục ReactJS và trở thành một Web Developer chuyên nghiệp."
+
 ---
 
 #### Giới Thiệu Chung

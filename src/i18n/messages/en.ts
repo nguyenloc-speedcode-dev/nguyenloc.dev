@@ -1,43 +1,61 @@
 const viTrans = {
   header: {
-    home: "Trang Chủ",
-    about: "Giới Thiệu",
-    works: "Công Việc",
-    blogs: "Bài Viết",
-    contact: "Liên Hệ",
+    home: "Home",
+    about: "About",
+    works: "Works",
+    blogs: "Blogs",
+    contact: "Contact",
   },
   profile: {
     aboutMe:
-      "Tôi là một {role} với hơn {experience} trong việc xây dựng và phát triển các sản phẩm ứng dụng web.",
-    book_a_call: "Đặt Lịch Hẹn",
+      "I am a {role} with over {experience} in building and developing web app products.",
+    cv: "Resume",
   },
   heading: {
-    work_experience: "Kinh Nghiệm Làm Việc",
-    my_skill_area: "Khu Vực Kỹ Năng Của Tôi",
-    recent_projects: "Dự Án Gần Đây",
-    all_projects: "Tất Cả Dự Án",
-    mastering_key_skills: "Thành Thạo Các Kỹ Năng Chính",
-    available_for_hire: "Sẵn Sàng Làm Việc",
+    work_experience: "Work Experience",
+    my_skill_area: "My Skill Area",
+    recent_projects: "Recent Projects",
+    all_projects: "All Projects",
+    mastering_key_skills: "Mastering Key Skills",
+    available_for_hire: "Available For Hire",
+    check_out_my_latest: "Check Out My Latest",
+    projects: "Projects",
   },
   experience: {
     hopper_line_1:
-      "Tham gia vào các dự án outsource liên quan đến tài chính và mạng xã hội dành cho thú cưng.",
+      "Participated in outsource projects related to finance and social networks for pets",
     hopper_line_2:
-      "Sử dụng các framework Next.js, ExpressJS, GraphQL để xây dựng dự án.",
+      "Used Next.js framework ,ExpressJS, GraphQL to build projects",
     hopper_line_3:
-      "Làm việc trực tiếp với khách hàng về các tính năng dự án, đóng góp vào sự phát triển và hoàn thiện của dự án.",
+      "Worked directly with clients on project features, contributing to the successful development and delivery of the project",
 
     playground_line_1:
-      "Phát triển các dự án Web3 trong lĩnh vực tài chính và GameFi.",
+      "Developed Web3 projects in the fields of finance and GameFi.",
     playground_line_2:
-      "Sử dụng các thư viện và framework như React.js, Ionic, Capacitor, Next.js, Nest.js, và Ether.js để phát triển dự án.",
-    playground_line_3: "Bảo trì và phát triển các tính năng mới cho dự án.",
+      "Used libraries and frameworks such as React.js, Ionic, Capacitor, Next.js, Nest.js, and Ether.js to develop projects.",
+    playground_line_3: "Maintained and developed new features for projects.",
     playground_line_4:
-      "Hợp tác với nhân viên trong bộ phận để đảm bảo thiết kế và triển khai tập trung vào người dùng, đảm bảo trang web được phát hành đúng thời hạn.",
+      "Collaborated with department staff to ensure user-focused design and implementation, ensuring the website was released on time.",
     tikatika_line_1:
-      "Bảo trì, sửa lỗi và cập nhật dự án với các tính năng mới.",
+      "Maintained, fixed bugs, and updated the project with new features.",
     tikatika_line_2:
-      "Nâng cao kỹ năng và tích lũy kinh nghiệm với các công nghệ như Vue.js và React.js.",
+      "Enhanced skills and gained experience with technologies such as Vue.js and React.js.",
+  },
+  blog: {
+    title: "My Recent Article",
+    description:
+      "My latest articles and publications, sharing experiences and interesting perspectives from my career journey.",
+  },
+  contact: {
+    name: "Name",
+    enter_name: "Enter your email",
+    enter_email: "Enter your email",
+    subject: "Subject",
+    enter_subject: "Enter your subject",
+    comment: "Comment",
+    enter_comment: "Type details about your inquiry",
+    send_message: "Send message",
+    send_success: "Send message success",
   },
 };
 

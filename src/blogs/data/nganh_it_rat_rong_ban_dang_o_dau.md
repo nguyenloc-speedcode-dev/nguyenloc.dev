@@ -4,6 +4,9 @@ slug: nganh_it_rat_rong_ban_dang_o_dau
 category: Chuyện trò linh tinh
 date: 26/12/2024
 img: /images/blogs/nganh_it_rat_rong_ban_dang_o_dau.webp
+key: [Ngành IT, định hướng nghề nghiệp IT, lập trình web, lập trình mobile, tester, roadmap IT]
+description_short: Khám phá sự rộng lớn của ngành IT, các lĩnh vực chính như web, mobile, tester, và tìm hiểu cách định hướng nghề nghiệp qua roadmap cụ thể.
+
 ---
 
 

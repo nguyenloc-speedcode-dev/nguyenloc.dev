@@ -21,6 +21,7 @@ import { cookies } from "next/headers";
 import { getLocale, getMessages } from "next-intl/server";
 import NextTopLoader from "nextjs-toploader";
 import { NextIntlClientProvider } from "next-intl";
+import { Toaster } from "react-hot-toast";
 
 
 // -----------------------------------------------------
@@ -88,6 +89,10 @@ export default async function RootLayout({
           easing="ease"
           speed={400}
           shadow="0 0 10px #00b8d4,0 0 5px #00b8d4"
+        />
+        <Toaster
+          position="top-center"
+          reverseOrder={false}
         />
         <NextIntlClientProvider messages={messages}>
           <MainLayout theme={theme?.value === 'true'}>

@@ -1,7 +1,14 @@
+'use client'
+
 import ProfileCard from "@/components/elements/ProfileCard";
+import { useLocale, useTranslations } from "next-intl";
 import React from "react";
+import toast from "react-hot-toast";
 
 const Index = () => {
+  const contactTrans = useTranslations('contact')
+  const locale = useLocale()
+
   return (
     <section className="content-box-area mt-4">
       <div className="container">
@@ -15,12 +22,24 @@ const Index = () => {
                 <div className="top-info">
                   <div className="text">
                     <h1 className="main-title">
-                      Let's 👋 <span>Work</span> Together
+                      {
+                        locale == 'en' ? <>
+                          Let's 👋 <span>Work</span> Together
+                        </>
+                          :
+                          <>
+                            Hãy 👋<span>Làm việc</span> cùng nhau
+                          </>
+                      }
+
                     </h1>
                     <p>
-                      I'm here to help if you're searching for a product
-                      designer to bring your idea to life or a design partner to
-                      help take your business to the next level.
+                      {
+                        locale === 'en' ?
+                          `I'm here to assist if you're looking for a web app developer to bring your vision to life or a reliable partner to elevate your business to new heights.`
+                          : "Tôi sẵn sàng trợ giúp nếu bạn đang tìm kiếm một nhà phát triển web app để biến ý tưởng của bạn thành hiện thực hoặc một đối tác thiết kế để giúp đưa doanh nghiệp của bạn lên một tầm cao mới."
+                      }
+
                     </p>
                   </div>
                 </div>
@@ -29,18 +48,20 @@ const Index = () => {
                     <div className="comments-box">
                       <form
                         id="contact-form"
-                        action="https://marveltheme.com/tf/html/bentofolio-html/assets/mail.php"
-                        method="POST"
+                        onSubmit={(e) => {
+                          e.preventDefault()
+                          toast.success(contactTrans("send_success"))
+                        }}
                       >
                         <div className="row gx-3">
                           <div className="col-md-6">
                             <div className="mb-4">
-                              <label className="form-label">Name</label>
+                              <label className="form-label">{contactTrans('name')}</label>
                               <input
                                 name="name"
                                 type="text"
                                 className="form-control shadow-none"
-                                placeholder="Enter your name"
+                                placeholder={contactTrans('enter_name')}
                               />
                             </div>
                           </div>
@@ -51,37 +72,37 @@ const Index = () => {
                                 name="email"
                                 type="email"
                                 className="form-control shadow-none"
-                                placeholder="Enter your email"
+                                placeholder={contactTrans('enter_email')}
                               />
                             </div>
                           </div>
                           <div className="col-12">
                             <div className="mb-4">
-                              <label className="form-label">Subject</label>
+                              <label className="form-label">{contactTrans('subject')}</label>
                               <input
                                 name="subject"
                                 type="text"
                                 className="form-control shadow-none"
-                                placeholder="Subject"
+                                placeholder={contactTrans('enter_subject')}
                               />
                             </div>
                           </div>
-                     
+
                           <div className="col-md-12">
                             <div className="mb-4">
-                              <label className="form-label">Comment</label>
+                              <label className="form-label">{contactTrans('comment')}</label>
                               <textarea
                                 name="message"
                                 className="form-control shadow-none"
                                 rows={4}
-                                placeholder="Type details about your inquiry"
+                                placeholder={contactTrans('enter_comment')}
                                 defaultValue={""}
                               />
                             </div>
                           </div>
                           <div className="col-md-12">
                             <button className="submit-btn" type="submit">
-                              Send Message
+                              {contactTrans('send_message')}
                               <svg
                                 className="icon"
                                 width={20}
