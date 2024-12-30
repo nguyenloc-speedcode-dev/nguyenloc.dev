@@ -74,9 +74,9 @@ const Article = async ({
                                         />
                                     </div>
                                     <ul className="list-unstyled article-tags">
-                                        <li>15 min read</li>
-                                        <li>Nov 6, 2023</li>
-                                        <li>1.5k Views</li>
+
+                                        <li>{blog?.data?.date}</li>
+                                        <li>{Math.floor(Math.random() * 6) + 1}k Views</li>
                                     </ul>
                                     <div className="article-details-text">
                                         <h1 className="main-title">
@@ -128,7 +128,10 @@ const Article = async ({
                                                 </div>
                                             </div>
                                         </div>
-                                        <RelatedPost category={blog?.data?.category || ""} />
+                                        <RelatedPost
+                                            category={blog?.data?.category || ""}
+                                            blog={blog}
+                                        />
                                     </div>
                                 </div>
                             </div>

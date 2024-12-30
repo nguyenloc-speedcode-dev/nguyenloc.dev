@@ -29,7 +29,6 @@ const BlogCard = ({ post }: {
                     {post.data.title}
                 </Link>
                 <ul className="list-unstyled">
-                    <li>15 min read</li>
                     <li>{post.data.date}</li>
                 </ul>
             </div>

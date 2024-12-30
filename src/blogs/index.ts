@@ -32,7 +32,10 @@ export async function getPostBySlug(slug: string): Promise<IBlog> {
   };
 }
 
-export async function getRelatedPostbySlug(category: string) {
+export async function getRelatedPostbySlug(
+  category: string,
+  blogCurrent: IBlog
+) {
   const fileNames = fs.readdirSync(postsDirectory);
   const allPostsData = await Promise.all(
     fileNames.map(async (fileName) => {
@@ -60,7 +63,7 @@ export async function getRelatedPostbySlug(category: string) {
     })
   );
 
-  return allPostsData.filter((i) => !!i);
+  return allPostsData.filter((i) => !!i && i?.id !== blogCurrent.id);
 }
 export async function getSortedPostsData() {
   // Get file names under /posts

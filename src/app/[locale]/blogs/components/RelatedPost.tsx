@@ -4,17 +4,17 @@ import { notFound } from 'next/navigation'
 import React from 'react'
 import BlogCard from './BlogCard'
 
-const getRelatedPost = async (slug: string) => {
+const getRelatedPost = async (slug: string, blog: IBlog) => {
     try {
-        const posts = await getRelatedPostbySlug(slug)
+        const posts = await getRelatedPostbySlug(slug, blog)
         return posts
     } catch (error) {
         notFound()
     }
 }
 
-const RelatedPost = async ({ category }: { category: string }) => {
-    const data = await getRelatedPost(category) as Array<IBlog>
+const RelatedPost = async ({ category, blog }: { category: string, blog: IBlog }) => {
+    const data = await getRelatedPost(category, blog) as Array<IBlog>
 
     return (
         <div className="related-post">
