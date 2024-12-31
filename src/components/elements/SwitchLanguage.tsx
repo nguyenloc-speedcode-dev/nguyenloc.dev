@@ -12,7 +12,7 @@ const SwitchLanguage = () => {
     const locale = useLocale()
     const router = useRouter()
     const pathName = usePathname()
-    console.log(locale);
+
 
     return (
 
