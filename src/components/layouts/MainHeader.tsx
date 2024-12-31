@@ -21,8 +21,9 @@ import SwitchLanguage from "../elements/SwitchLanguage";
 const MainHeader = () => {
   const pathname = usePathname();
 
-
+  const profileTrans = useTranslations('profile')
   const t = useTranslations("header")
+
   const [isShowMenuMobile, setIsShowMenuMobile] = useState(false)
 
   const { isDarkMode, toggleDarkMode } = useStore();
@@ -199,8 +200,8 @@ const MainHeader = () => {
                   </span>
                 </button>
                 <SwitchLanguage />
-                <a href="contact.html" className="lets-talk-btn">
-                  Let's Talk
+                <Link href={ROUTES.RESUME} className="lets-talk-btn">
+                  {profileTrans('cv')}
                   <svg
                     className="icon"
                     width={20}
@@ -224,7 +225,7 @@ const MainHeader = () => {
                       strokeLinejoin="round"
                     />
                   </svg>
-                </a>
+                </Link>
               </div>
             </div>
             <div className={clsx("mobile-menu-overlay d-block d-lg-none ", {

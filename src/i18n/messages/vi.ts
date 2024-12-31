@@ -8,7 +8,7 @@ const viTrans = {
   },
   profile: {
     aboutMe:
-      "Tôi là một {role} với hơn {experience} trong việc xây dựng và phát triển các sản phẩm ứng dụng web.",
+      "Tôi là một Lập trình viên phát triển ứng dụng web với hơn 3 năm kinh nghiệm, chuyên về phát triển frontend sử dụng React, Vue.js và Next.js để tạo ra giao diện thân thiện với người dùng và hiệu suất cao. Với tư duy thiết kế tốt và kiến thức backend về Node.js và MongoDB, tôi đảm bảo sự tương tác mượt mà giữa frontend và backend. Mục tiêu của tôi là mang đến các ứng dụng web sáng tạo, có khả năng mở rộng và hiệu quả, đáp ứng nhu cầu của người dùng.",
     cv: "Hồ sơ",
   },
   heading: {

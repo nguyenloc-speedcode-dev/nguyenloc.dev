@@ -46,7 +46,7 @@ type Props = {
 
 export const metadata: Metadata = {
   title: "Web App Developer",
-  description: "Web App Developer with over 3 years of experience in building and developing web applications, specializing in JavaScript, React, Next.js, and health tech solutions.",
+  description: "I am a Web App Developer with over 3 years of experience, specializing in frontend development using React, Vue.js, and Next.js to create user-friendly and high-performance interfaces. With a strong design sense and backend knowledge in Node.js and MongoDB, I ensure seamless interaction between frontend and backend. My goal is to deliver innovative, scalable, and efficient web applications that meet user needs.",
   keywords: ['Web App Developer', 'JavaScript', 'React', 'Next.js', 'Front-End Development', 'Full-Stack Development', 'HealthTech', 'Biodiversity', 'Software Development', 'UI/UX Design', 'Web Applications', 'API Development', 'FE'],
   verification: {
     google: "zUSnbL8nttNPqeEAuv0ewCY5-G4fjM7saufqMHkbaA4",

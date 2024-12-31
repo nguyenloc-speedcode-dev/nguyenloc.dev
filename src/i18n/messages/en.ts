@@ -8,7 +8,7 @@ const viTrans = {
   },
   profile: {
     aboutMe:
-      "I am a {role} with over {experience} in building and developing web app products.",
+      "I am a {role} with over {experience}, specializing in frontend development using React, Vue.js, and Next.js to create user-friendly and high-performance interfaces. With a strong design sense and backend knowledge in Node.js and MongoDB, I ensure seamless interaction between frontend and backend. My goal is to deliver innovative, scalable, and efficient web applications that meet user needs.",
     cv: "Resume",
   },
   heading: {
