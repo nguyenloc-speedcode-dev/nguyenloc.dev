@@ -60,3 +60,11 @@
 .content-post ul {
   padding-left: 1.5rem;
 }
+
+/* .control-lang .flag:hover + .dropdown-menu {
+  display: block;
+} */
+
+.control-lang .dropdown-menu .dropdown-item {
+  cursor: pointer;
+}

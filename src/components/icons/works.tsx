@@ -32,6 +32,7 @@ const WorkIcon: React.FC<WorkIconProps> = ({ className }) => {
                 strokeLinejoin="round"
             />
         </svg>
+
     );
 };
 

@@ -16,6 +16,7 @@ import HomeIcon from "../icons/home";
 import BlogIcon from "../icons/blogs";
 import ContactIcon from "../icons/contact";
 import SwitchLanguage from "../elements/SwitchLanguage";
+import WorkIcon from "../icons/works";
 
 
 const MainHeader = () => {
@@ -45,7 +46,7 @@ const MainHeader = () => {
     },
     {
       name: t('works'),
-      icon: <AboutIcon />,
+      icon: <WorkIcon />,
       link: ROUTES.WORKS
     },
     {
