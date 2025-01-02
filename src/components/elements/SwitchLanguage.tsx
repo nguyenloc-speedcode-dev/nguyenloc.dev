@@ -50,17 +50,16 @@ const SwitchLanguage = () => {
             >
                 <li><div className="dropdown-item"
                     onClick={() => {
-                        router.push(pathName, { locale: 'vi' })
+                        router.push(pathName, { locale: 'en' })
                         typeof window !== 'undefined' && window.location.reload()
                     }}
                 >
-                    <Image src={enFlag} alt="Vietnamese" width={24} height={24} />
+                    <Image src={enFlag} alt="English" width={24} height={24} />
                     English
                 </div></li>
                 <li><div className="dropdown-item"
                     onClick={() => {
-
-                        router.push(pathName, { locale: 'en' })
+                        router.push(pathName, { locale: 'vi' })
                         typeof window !== 'undefined' && window.location.reload()
                     }}
                 >
