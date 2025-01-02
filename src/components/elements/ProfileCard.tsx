@@ -90,7 +90,7 @@ const ProfileCard = () => {
                 </a>
               </li>
               <li>
-                <a href="https://github.com/nguyenloc120299" target="_blank">
+                <a href="https://github.com/nguyenloc-speedcode-dev" target="_blank">
                   <i className="fab fa-github" />
                 </a>
               </li>
