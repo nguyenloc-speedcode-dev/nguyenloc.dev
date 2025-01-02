@@ -33,9 +33,9 @@ const SwitchLanguage = () => {
 
                 >
                     {
-                        locale === 'en' ? <Image src={viFlag} alt="Vietnamese" width={24} height={24} />
+                        locale === 'vi' ? <Image src={viFlag} alt="Vietnamese" width={24} height={24} />
                             :
-                            <Image src={enFlag} alt="Vietnamese" width={24} height={24} />
+                            <Image src={enFlag} alt="English" width={24} height={24} />
                     }
 
                 </div>
