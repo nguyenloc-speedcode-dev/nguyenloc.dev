@@ -21,6 +21,8 @@ import _ionic from "@/assets/images/skill/ionic.png";
 import aihome from "@/assets/images/portfolio/aihome.png";
 import wagglilife from "@/assets/images/portfolio/waggly_life.jpg";
 import friendify from "@/assets/images/portfolio/friendify.png";
+import poolswallet from "@/assets/images/portfolio/poolswallet.webp";
+import snailhouse from "@/assets/images/portfolio/snailhouse.jpg";
 
 export const SkillData = [
   {
@@ -103,21 +105,39 @@ export const SkillData = [
 
 export const projectsData = [
   {
-    img: aihome,
-    title: "Ai Homes",
-    tech: "NextJs,TaiwindCss,Redux Toolkit",
-    link: "https://www.wagglylife.com/",
-  },
-  {
     img: wagglilife,
     title: "Waggly Life",
     tech: "NextJs,TaiwindCss,GraphQL,Redux",
     link: "https://www.wagglylife.com/",
+    type: "web",
   },
+  {
+    img: poolswallet,
+    title: "Pools Wallet",
+    tech: "ReactJS,Ionic,EtherJS,Redux,Capacitor",
+    link: "https://play.google.com/store/apps/details?id=com.wallet.pools&hl=en_US",
+    type: "app",
+  },
+  {
+    img: aihome,
+    title: "Ai Homes",
+    tech: "NextJs,TaiwindCss,Redux Toolkit",
+    link: "https://play.google.com/store/apps/details?id=com.aihomes.io&hl=vi",
+    type: "app",
+  },
+
   {
     img: friendify,
     title: "Friendify AI",
     tech: "NextJs,TaiwindCss,Redux Thunk",
     link: "https://app.friendify.ai/",
+    type: "web",
+  },
+  {
+    img: snailhouse,
+    title: "Snailhouse MarketPlace",
+    tech: "ReactJs,Boostrap,Redux Thunk",
+    link: "https://snailhouse.io/",
+    type: "web",
   },
 ];

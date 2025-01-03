@@ -12,9 +12,6 @@ interface Props {
 
 const ReviewProject = ({ onClose, linkIframe }: Props) => {
 
-
-
-
     return (
         <div className='review-project'>
             <div className={clsx('wrap-iframe ', {

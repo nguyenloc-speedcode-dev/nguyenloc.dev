@@ -14,11 +14,7 @@ const SwitchLanguage = () => {
     const router = useRouter()
     const [isShow, setIsShow] = useState(false)
     const pathName = usePathname()
-
-
     return (
-
-
 
         <div className="control-lang" onMouseMove={() => setIsShow(true)}
             onMouseLeave={() => setIsShow(false)}

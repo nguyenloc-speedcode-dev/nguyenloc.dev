@@ -62,7 +62,12 @@ const Index = () => {
                               className="img-fluid w-100"
                             />
                             <div
-                              onClick={() => setIsShowReview(i.link)}
+                              onClick={() => {
+                                if (i.type === 'app') {
+                                  return window.open(i.link, '_blank');
+                                }
+                                return setIsShowReview(i.link)
+                              }}
                               className="gallery-popup full-image-preview parent-container"
                             >
                               <svg
@@ -93,83 +98,7 @@ const Index = () => {
                     ))}
 
                   </div>
-                  {/* <div className="pagination">
-                    <ul className="list-unstyled">
-                      <li className="prev">
-                        <button>
-                          <svg
-                            className="icon"
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            strokeWidth={2}
-                            stroke="currentColor"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"
-                            />
-                          </svg>
-                        </button>
-                      </li>
-                      <li>
-                        <button>1</button>
-                      </li>
-                      <li>
-                        <button>2</button>
-                      </li>
-                      <li>
-                        <button>3</button>
-                      </li>
-                      <li>
-                        <button className="next-page-btn">
-                          <span className="dots">
-                            <i className="fas fa-ellipsis-h" />
-                          </span>
-                          <span className="next-page">
-                            <svg
-                              className="icon icon-arrow-right"
-                              xmlns="http://www.w3.org/2000/svg"
-                              width={24}
-                              height={24}
-                              viewBox="0 0 24 24"
-                              fill="none"
-                              stroke="currentColor"
-                              strokeWidth={2}
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                            >
-                              <path d="m6 17 5-5-5-5" />
-                              <path d="m13 17 5-5-5-5" />
-                            </svg>
-                          </span>
-                          <span className="next-page-number">Next 4 pages</span>
-                        </button>
-                      </li>
-                      <li>
-                        <button>100</button>
-                      </li>
-                      <li className="next">
-                        <button>
-                          <svg
-                            className="icon"
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            strokeWidth={2}
-                            stroke="currentColor"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
-                            />
-                          </svg>
-                        </button>
-                      </li>
-                    </ul>
-                  </div> */}
+
                   <ReviewProject linkIframe={isShowReview} onClose={() => setIsShowReview(false)} />
                 </div>
                 <div className="work-together-slider">
