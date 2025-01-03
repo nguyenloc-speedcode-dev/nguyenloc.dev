@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 
 import wagglife from "@/assets/images/portfolio/waggly_life.jpg";
-import aihome from "@/assets/images/portfolio/aihome.png";
+import snailhouse from "@/assets/images/portfolio/snailhouse.jpg";
 import friendify from "@/assets/images/portfolio/friendify.png";
 import Image from "next/image";
 import ReviewProject from "./ReviewProject";
@@ -17,9 +17,9 @@ const cardData = [
     linkIframe: "https://www.wagglylife.com/"
   },
   {
-    img: aihome,
-    title: "AI Homes Projects",
-    linkIframe: "https://www.wagglylife.com/"
+    img: snailhouse,
+    title: "Snailhouse MarketPlace",
+    linkIframe: "https://snailhouse.io/",
   },
   {
     img: friendify,
