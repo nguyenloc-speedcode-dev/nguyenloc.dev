@@ -1,7 +1,7 @@
 ---
 title: "Chọn thư viện nào cho dự án REACTJS tiếp theo trong năm 2025?"
 slug: chon_thu_vien_nao_cho_du_an_reactjs_tiep_theo_trong_name_2025
-category: Chia sẻ kinh nghiệm
+category: Frontend
 date: 30/12/2024
 img: 
  /images/blogs/chon_thu_vien_bao_cho_du_an_reactjs_tiep_theo_trong_name_2025.jpeg

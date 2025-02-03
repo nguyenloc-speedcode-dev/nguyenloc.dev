@@ -6,6 +6,8 @@ import { notFound } from 'next/navigation'
 import React from 'react'
 import RelatedPost from '../components/RelatedPost'
 import { Metadata, ResolvingMetadata } from 'next'
+import { FacebookMessengerShareButton, FacebookShareButton } from 'react-share'
+import ShareSns from '../components/ShareSns'
 
 
 type Props = {
@@ -102,30 +104,10 @@ const Article = async ({
                                             </div>
                                             <div className="share">
                                                 <h3 className="title">Share:</h3>
-                                                <div className="social-media-icon mt-0">
-                                                    <ul className="list-unstyled">
-                                                        <li>
-                                                            <a href="#">
-                                                                <i className="fab fa-facebook" />
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#">
-                                                                <i className="fab fa-pinterest" />
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#">
-                                                                <i className="fab fa-github" />
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#">
-                                                                <i className="fab fa-youtube" />
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
+                                                <ShareSns
+                                                    media={blog?.data?.img as string}
+
+                                                />
                                             </div>
                                         </div>
                                         <RelatedPost
