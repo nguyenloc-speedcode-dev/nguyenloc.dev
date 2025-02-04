@@ -23,6 +23,12 @@ const Index = () => {
           <div className="col-xl-8">
             <div className="card content-box-card">
               <div className="card-body">
+                <div className="available-btn">
+                  <span>
+                    <i className="fas fa-circle" /> {t("heading.available_for_hire")}
+                  </span>
+                </div>
+
                 <div className="top-info">
                   <div className="text">
                     <h1 className="main-title">
@@ -38,11 +44,7 @@ const Index = () => {
 
                     </p>
                   </div>
-                  <div className="available-btn">
-                    <span>
-                      <i className="fas fa-circle" /> {t("heading.available_for_hire")}
-                    </span>
-                  </div>
+
                 </div>
                 <div className="counter-area">
                   <div className="counter">
