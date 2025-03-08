@@ -23,6 +23,7 @@ import wagglilife from "@/assets/images/portfolio/waggly_life.jpg";
 import friendify from "@/assets/images/portfolio/friendify.png";
 import poolswallet from "@/assets/images/portfolio/poolswallet.webp";
 import snailhouse from "@/assets/images/portfolio/snailhouse.jpg";
+import theGoats from "@/assets/images/portfolio/the-goatsfx.png";
 
 export const SkillData = [
   {
@@ -105,8 +106,15 @@ export const SkillData = [
 
 export const projectsData = [
   {
-    img: wagglilife,
+    img: theGoats,
     title: "Waggly Life",
+    tech: "NextJs,TaiwindCss,Supabase JS ,Redux",
+    link: "https://www.thegoatsfx.com/",
+    type: "web",
+  },
+  {
+    img: wagglilife,
+    title: "The GoatsFx Blogs",
     tech: "NextJs,TaiwindCss,GraphQL,Redux",
     link: "https://www.wagglylife.com/",
     type: "web",

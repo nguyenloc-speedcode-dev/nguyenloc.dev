@@ -5,6 +5,7 @@ import React, { useState } from "react";
 import wagglife from "@/assets/images/portfolio/waggly_life.jpg";
 import snailhouse from "@/assets/images/portfolio/snailhouse.jpg";
 import friendify from "@/assets/images/portfolio/friendify.png";
+import theGoats from "@/assets/images/portfolio/the-goatsfx.png";
 import Image from "next/image";
 import ReviewProject from "./ReviewProject";
 import Link from "next/link";
@@ -12,20 +13,26 @@ import { useTranslations } from "next-intl";
 
 const cardData = [
   {
+    img: theGoats,
+    title: "The GoatsFx Blogs",
+    linkIframe: "https://www.thegoatsfx.com/"
+  },
+  {
     img: wagglife,
     title: "Waggly Life Projects",
     linkIframe: "https://www.wagglylife.com/"
-  },
-  {
-    img: snailhouse,
-    title: "Snailhouse MarketPlace",
-    linkIframe: "https://snailhouse.io/",
   },
   {
     img: friendify,
     title: "Friendify Ai Projects",
     linkIframe: "https://app.friendify.ai/"
   },
+  {
+    img: snailhouse,
+    title: "Snailhouse MarketPlace",
+    linkIframe: "https://snailhouse.io/",
+  },
+
 ];
 
 const ProjectsCard = () => {

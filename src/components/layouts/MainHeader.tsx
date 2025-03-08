@@ -83,7 +83,7 @@ const MainHeader = () => {
                   height={40}
                 />
                 <span>
-                  Speed<span className="primary">Code</span>
+                  Speed<span className="primary">Dev</span>
                 </span>
               </Link>
             </div>
