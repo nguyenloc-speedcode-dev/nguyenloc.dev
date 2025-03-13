@@ -964,7 +964,7 @@ p {
 
 .content-box-card .working-with-area .working-with-main {
   display: flex;
-  gap: 19px;
+  gap: 16px;
   flex-wrap: wrap;
 }
 
@@ -979,8 +979,8 @@ p {
 }
 
 .content-box-card .working-with-area .working-with-main .items img {
-  width: 32px;
-  height: 32px;
+  width: 48px;
+  height: 48px;
 }
 
 .content-box-card .client-feedback {

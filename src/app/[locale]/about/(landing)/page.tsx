@@ -67,19 +67,29 @@ const Index = () => {
                   <h2 className="main-common-title">{t('heading.mastering_key_skills')} ✨</h2>
                   <div className="working-with-main">
                     {SkillData.map((i, index) => (
-                      <div className="items" key={index} style={{}}>
-                        <div
-                          style={{
-                            width: "60px",
-                            height: "60px",
-                            borderRadius: "50%",
-                            background: isDarkMode ? "#fff" : 'transparent',
-                            display: "flex",
-                            justifyContent: "center",
-                            alignItems: "center",
-                          }}
-                        >
-                          <Image src={i.img} alt={i.title} />
+                      <div>
+                        <div className="items " key={index} style={{}}>
+
+                          <div
+                            style={{
+                              width: "60px",
+                              height: "60px",
+                              borderRadius: "50%",
+                              background: isDarkMode ? "#fff" : 'transparent',
+                              display: "flex",
+                              justifyContent: "center",
+                              alignItems: "center",
+                            }}
+                          >
+                            <Image src={i.img} alt={i.title} />
+                          </div>
+
+                        </div>
+                        <div className="text-center my-2">
+                          <h4 className="title" style={{
+                            fontSize: '16px',
+                            color: "#000"
+                          }}>{i.title}</h4>
                         </div>
                       </div>
                     ))}

@@ -17,6 +17,8 @@ import _netlify from "@/assets/images/skill/netlify.png";
 import _render from "@/assets/images/skill/render.svg";
 import _vercel from "@/assets/images/skill/vercel.png";
 import _ionic from "@/assets/images/skill/ionic.png";
+import _firebase from "@/assets/images/skill/firebase.png";
+import _supabasejs from "@/assets/images/skill/supabase.png";
 
 import aihome from "@/assets/images/portfolio/aihome.png";
 import wagglilife from "@/assets/images/portfolio/waggly_life.jpg";
@@ -87,12 +89,20 @@ export const SkillData = [
     title: "Netlify Cloud",
   },
   {
+    img: _firebase,
+    title: "Firebase",
+  },
+  {
     img: _render,
     title: "Render Cloud",
   },
   {
     img: _vercel,
     title: "Vercel Cloud",
+  },
+  {
+    img: _supabasejs,
+    title: "SupabaseJs",
   },
   {
     img: _sass,
@@ -107,7 +117,7 @@ export const SkillData = [
 export const projectsData = [
   {
     img: theGoats,
-    title: "Waggly Life",
+    title: "The GoatsFx Blog",
     tech: "NextJs,TaiwindCss,Supabase JS ,Redux",
     link: "https://www.thegoatsfx.com/",
     type: "web",

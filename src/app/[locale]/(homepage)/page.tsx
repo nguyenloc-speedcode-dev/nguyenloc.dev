@@ -14,10 +14,10 @@ const HomePage = () => {
 
             <div className="container">
                 <div className="row g-4">
-                    <div className="col-xl-4">
+                    <div className="col-lg-4">
                         <ProfileCard />
                     </div>
-                    <div className="col-xl-4">
+                    <div className="col-lg-4">
                         <div className="row g-4">
                             <div className="col-lg-12">
                                 <ExperienceCard />
@@ -27,7 +27,7 @@ const HomePage = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-xl-4">
+                    <div className="col-lg-4">
                         <ProjectsCard />
                     </div>
                 </div>

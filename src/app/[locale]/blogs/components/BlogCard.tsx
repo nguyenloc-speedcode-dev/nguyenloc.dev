@@ -25,12 +25,15 @@ const BlogCard = ({ post }: {
 
             </div>
             <div className="text">
-                <Link href={ROUTES.BLOGS + `/${post?.data?.slug}`} className="title">
+                <Link href={ROUTES.BLOGS + `/${post?.data?.slug}`} className="title fw-bold">
                     {post.data.title}
                 </Link>
-                <ul className="list-unstyled">
-                    <li>{post.data.date}</li>
-                </ul>
+                <div className="" style={{
+                    fontSize: "12px",
+                    color: "#ccc"
+                }}>
+                    <span>{post.data.date}</span>
+                </div>
             </div>
         </div>
     )

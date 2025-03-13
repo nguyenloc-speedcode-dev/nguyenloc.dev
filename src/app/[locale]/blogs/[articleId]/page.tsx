@@ -68,23 +68,35 @@ const Article = async ({
                         <div className="card content-box-card">
                             <div className="card-body portfolio-card article-details-card">
                                 <div className="article-details-area">
-                                    <div className="main-image">
+                                    {/* <div className="main-image">
                                         <img
                                             src={blog?.data?.img}
                                             alt="blog-img-1"
                                             className="img-fluid w-100"
                                         />
-                                    </div>
-                                    <ul className="list-unstyled article-tags">
+                                    </div> */}
 
-                                        <li>{blog?.data?.date}</li>
-                                        <li>{Math.floor(Math.random() * 6) + 1}k Views</li>
-                                    </ul>
                                     <div className="article-details-text">
-                                        <h1 className="main-title">
+                                        <h1 className="main-title fw-bold fs-1">
                                             {blog?.data?.title}
                                         </h1>
-                                        <div className='content-post' dangerouslySetInnerHTML={
+                                        <hr className='bg-light' style={{
+                                            borderTop: "1px solid #aaaa"
+                                        }} />
+                                        <div className="d-flex gap-2 fst-italic" style={{
+                                            color: "#aaa",
+                                            fontSize: "13px"
+                                        }}>
+                                            <div>Ngày đăng {blog?.data?.date}</div>
+                                            <div>|</div>
+                                            <div>{Math.floor(Math.random() * 6) + 1} views</div>
+                                            <div>|</div>
+                                            <div>Tác giả : Nguyễn Lộc</div>
+                                        </div>
+                                        <hr style={{
+                                            borderTop: "1px solid #aaaa"
+                                        }} />
+                                        <div className='content-post lh-lg' dangerouslySetInnerHTML={
                                             {
                                                 __html: blog?.content
                                             }

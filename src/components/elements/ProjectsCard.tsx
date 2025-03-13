@@ -22,11 +22,11 @@ const cardData = [
     title: "Waggly Life Projects",
     linkIframe: "https://www.wagglylife.com/"
   },
-  {
-    img: friendify,
-    title: "Friendify Ai Projects",
-    linkIframe: "https://app.friendify.ai/"
-  },
+  // {
+  //   img: friendify,
+  //   title: "Friendify Ai Projects",
+  //   linkIframe: "https://app.friendify.ai/"
+  // },
   {
     img: snailhouse,
     title: "Snailhouse MarketPlace",

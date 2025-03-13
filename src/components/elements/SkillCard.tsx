@@ -12,9 +12,12 @@ import { useTranslations } from "next-intl";
 const SkillCard = () => {
   const breakpoint = useBreakpoint()
   const t = useTranslations()
-  const cardData = breakpoint === 'mobile' ? SkillData.slice(0, 9) : SkillData.slice(0, 22);
+  const cardData = breakpoint === 'mobile' ? SkillData.slice(0, 9) : SkillData.slice(0, 12);
   return (
-    <div className="card expertise-card">
+    <div className="card expertise-card" style={{
+      maxHeight: "100%",
+      overflow: 'auto'
+    }}>
       <div className="card-body">
         <h3 className="card-title">My Skill Area</h3>
         <div className="expertise-main mt-24">
