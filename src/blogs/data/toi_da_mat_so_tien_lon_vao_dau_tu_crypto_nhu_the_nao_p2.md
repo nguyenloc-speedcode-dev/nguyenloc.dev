@@ -3,7 +3,7 @@ title: Tôi đã mất số tiền lớn khi đầu tư vào Crypto như thế n
 slug: toi_da_mat_so_tien_lon_vao_dau_tu_crypto_nhu_the_nao_p2
 category: Chuyện trò linh tinh
 date: 30/12/2024
-img: /images/blogs/toi_da_mat_so_tien_lon_vao_dau_tu_crypto_nhu_the_nao.jpeg
+img: /images/blogs/toi_da_mat_so_tien_lon_vao_dau_tu_crypto_nhu_the_nao-2.jpeg
 key: [crypto, đầu tư, tài chính cá nhân, cháy tài khoản, câu chuyện đầu tư]
 description_short: Câu chuyện kể về hành trình đầu tư crypto của tôi, từ những lần cháy tài khoản đến bài học nhớ đời về lòng tham, sự kiên nhẫn và kiểm soát cảm xúc.
 
@@ -39,5 +39,3 @@ Mỗi lần nghĩ về số tiền đã mất, tôi lại cảm thấy tiếc nu
 "Thất bại có thể là tạm thời, nhưng kinh nghiệm sẽ mãi ở lại."
 
 Hehe, dù gì thì cũng là một hành trình đáng nhớ, đúng không? 😉
-
-

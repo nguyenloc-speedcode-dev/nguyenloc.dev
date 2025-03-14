@@ -10,7 +10,7 @@ description_short: Khám phá sự rộng lớn của ngành IT, các lĩnh vự
 ---
 
 
-# Anh ơi, qua cài win cho em với!
+# Anh ơi, qua cài win cho em với
 
 Anh ơi, qua cài win cho em với! Anh ới, máy tính em bị màn hình xanh đỏ tím vàng rồi!  
 Máy tính em bị virus rồi, anh qua cứu em với, huhu! Hình như anh học ngành IT mà phải không?
@@ -74,4 +74,3 @@ Cũng giống như web, bạn nhìn thấy và sử dụng các ứng dụng mob
 Về phương diện tiếp cận cũng khá giống bên web. Ban đầu khi tiếp cận cũng tương đối dễ, nhưng về sau để trở nên thành thạo thì cũng rất phức tạp.
 
 ![Trở thành mobile developer](/images/blogs/tro_thanh_mobile_developer.jpeg)
-
