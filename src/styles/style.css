@@ -625,12 +625,13 @@ p {
 }
 
 .work-experiance-card .work-experiance-slider li + li {
-  margin-top: 16px;
+  margin-top: 30px;
 }
 
 .work-experiance-card .work-experiance-slider li {
   display: flex !important;
   gap: 30px;
+  flex-direction: column;
 }
 
 .animate-scrollY:hover .work-experiance-slider {

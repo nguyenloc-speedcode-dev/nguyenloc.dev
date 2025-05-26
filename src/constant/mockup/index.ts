@@ -27,6 +27,14 @@ import poolswallet from "@/assets/images/portfolio/poolswallet.webp";
 import snailhouse from "@/assets/images/portfolio/snailhouse.jpg";
 import theGoats from "@/assets/images/portfolio/the-goatsfx.png";
 
+import tikatika from "@/assets/logo/tikatika-logo.png";
+import playground from "@/assets/logo/playground.png";
+import hopper from "@/assets/logo/hopper.png";
+import freelance from "@/assets/logo/free-trade-area.png"
+
+import { useMemo } from "react";
+import { useTranslations } from "next-intl";
+
 export const SkillData = [
   {
     img: javascript,
@@ -159,3 +167,51 @@ export const projectsData = [
     type: "web",
   },
 ];
+
+export const useWorkExperienceData = () => {
+  const exTrans = useTranslations("experience");
+  const workExperienceData = useMemo(
+    () => [
+      {
+        title: "Freelance Web App Developer",
+        company_name: "Freelance",
+        avat_company: freelance,
+        time: "01/2025 - 06/2025",
+        contents: [exTrans("freelance_line_1")],
+      },
+      {
+        title: "Web App Developer",
+        company_name: "HOPPER VN",
+        avat_company: hopper,
+        time: "09/2023 - 11/2024",
+        contents: [
+          exTrans("hopper_line_1"),
+          exTrans("hopper_line_2"),
+          exTrans("hopper_line_3"),
+        ],
+      },
+      {
+        title: "Web App Developer",
+        company_name: "PLAYGROUND",
+        avat_company: playground,
+        time: "12/2021 - 09/2023",
+        contents: [
+          exTrans("playground_line_1"),
+          exTrans("playground_line_2"),
+          exTrans("playground_line_3"),
+          exTrans("playground_line_4"),
+        ],
+      },
+      {
+        title: "Web App Developer",
+        company_name: "TIKATIKA",
+        avat_company: tikatika,
+        time: "08/2021 - 10/2021",
+        contents: [exTrans("tikatika_line_1"), exTrans("tikatika_line_2")],
+      },
+    ],
+    []
+  );
+
+  return workExperienceData;
+};

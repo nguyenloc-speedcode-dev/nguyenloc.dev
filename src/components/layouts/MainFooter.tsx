@@ -6,7 +6,7 @@ const MainFooter = () => {
       <div className="container">
         <div className="text text-center">
           <p>
-            @ portfolio 2024, By <a href="#">Speedcode Dev</a>
+            &copy; {new Date().getFullYear()} Portfolio, By <a href="#">Speedcode Dev</a>
           </p>
         </div>
       </div>

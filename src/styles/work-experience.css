@@ -99,6 +99,13 @@
   left: -14px;
   right: auto;
 }
+.timeline .company_name{
+  margin-left: 16px;
+}
+.timeline .company_name h4 {
+  font-size: 15px;
+  font-weight: 700;
+}
 .timeline-badge > a {
   color: #00b8d4 !important;
 }

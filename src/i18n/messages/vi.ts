@@ -8,7 +8,7 @@ const viTrans = {
   },
   profile: {
     aboutMe:
-      "Tôi là một Lập trình viên phát triển ứng dụng web với hơn 3 năm kinh nghiệm, chuyên về phát triển frontend sử dụng React, Vue.js và Next.js để tạo ra giao diện thân thiện với người dùng và hiệu suất cao. Với tư duy thiết kế tốt và kiến thức backend về Node.js và MongoDB, tôi đảm bảo sự tương tác mượt mà giữa frontend và backend. Mục tiêu của tôi là mang đến các ứng dụng web sáng tạo, có khả năng mở rộng và hiệu quả, đáp ứng nhu cầu của người dùng.",
+      "Tôi là một Lập trình viên Frontend với hơn 3 năm kinh nghiệm xây dựng các ứng dụng web nhanh, phản hồi tốt và thân thiện với người dùng bằng các công nghệ như React, Vue.js và Next.js. Tôi có con mắt thẩm mỹ tốt, chú trọng đến chi tiết và đam mê tạo ra những trải nghiệm người dùng mượt mà. Với kiến thức nền tảng về backend như Node.js và MongoDB, tôi có thể phối hợp hiệu quả với các nhóm đa chức năng để triển khai các giải pháp mạnh mẽ và có khả năng mở rộng. Mục tiêu của tôi là xây dựng các giao diện hiện đại, dễ sử dụng và hiệu suất cao để giải quyết các vấn đề thực tế của người dùng.",
     cv: "Hồ sơ",
   },
   heading: {
@@ -20,6 +20,8 @@ const viTrans = {
     available_for_hire: "Sẵn Sàng Làm Việc",
   },
   experience: {
+    freelance_line_1:
+      "Phát triển và duy trì các ứng dụng web giao diện người dùng cho nhiều khách hàng khác nhau, bao gồm blog, nền tảng GameFi, ứng dụng tài chính và các website giới thiệu doanh nghiệp.",
     hopper_line_1:
       "Tham gia vào các dự án outsource liên quan đến tài chính và mạng xã hội dành cho thú cưng.",
     hopper_line_2:

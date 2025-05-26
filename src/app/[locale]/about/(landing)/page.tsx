@@ -23,12 +23,6 @@ const Index = () => {
           <div className="col-xl-8">
             <div className="card content-box-card">
               <div className="card-body">
-                <div className="available-btn">
-                  <span>
-                    <i className="fas fa-circle" /> {t("heading.available_for_hire")}
-                  </span>
-                </div>
-
                 <div className="top-info">
                   <div className="text">
                     <h1 className="main-title">
@@ -57,7 +51,7 @@ const Index = () => {
                       <p className="subtitle">Project Completed</p>
                     </div>
                     <div className="counter-item">
-                      <h3 className="number">10+</h3>
+                      <h3 className="number">20+</h3>
                       <p className="subtitle">Happy Client</p>
                     </div>
                   </div>
@@ -99,12 +93,12 @@ const Index = () => {
                 <div className="work-together-slider">
                   <div className="slider-main d-flex gap-4 align-items-center">
                     <div className="slider-item">
-                      <Link href="/contact">Let's 👋 Work Together</Link>
-                      <Link href="/contact">Let's 👋 Work Together</Link>
+                      <Link href="/contact">Let’s Make It Happen</Link>
+                      <Link href="/contact">Build With Passion. Code With Us.</Link>
                     </div>
                     <div className="slider-item">
-                      <Link href="/contact">Let's 👋 Work Together</Link>
-                      <Link href="/contact">Let's 👋 Work Together</Link>
+                      <Link href="/contact">Turning Ideas Into Reality</Link>
+                      <Link href="/contact">You dream it, I’ll build it</Link>
                     </div>
                   </div>
                 </div>

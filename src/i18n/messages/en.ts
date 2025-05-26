@@ -8,7 +8,7 @@ const viTrans = {
   },
   profile: {
     aboutMe:
-      "I am a {role} with over {experience}, specializing in frontend development using React, Vue.js, and Next.js to create user-friendly and high-performance interfaces. With a strong design sense and backend knowledge in Node.js and MongoDB, I ensure seamless interaction between frontend and backend. My goal is to deliver innovative, scalable, and efficient web applications that meet user needs.",
+      "I am a Frontend Developer with over 3 years of experience building fast, responsive, and user-friendly web applications using React, Vue.js, and Next.js. I have a strong eye for design, attention to detail, and a passion for creating seamless user experiences. With working knowledge of backend technologies like Node.js and MongoDB, I effectively collaborate with cross-functional teams to deliver robust and scalable solutions. My goal is to craft modern, accessible, and high-performance interfaces that solve real user problems.",
     cv: "Resume",
   },
   heading: {
@@ -22,6 +22,8 @@ const viTrans = {
     projects: "Projects",
   },
   experience: {
+    freelance_line_1:
+      "Developed and maintained frontend web applications for diverse clients, including blogs, GameFi platforms, financial applications, and corporate introduction websites",
     hopper_line_1:
       "Participated in outsource projects related to finance and social networks for pets",
     hopper_line_2:
