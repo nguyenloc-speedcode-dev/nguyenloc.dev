@@ -85,12 +85,12 @@ const ProfileCard = () => {
                 </a>
               </li>
               <li>
-                <a href="https://t.me/speedcode_dev" target="_blank">
+                <a href="https://t.me/ponzi_dev" target="_blank">
                   <i className="fab fa-telegram" />
                 </a>
               </li>
               <li>
-                <a href="https://github.com/nguyenloc-speedcode-dev" target="_blank">
+                <a href="https://github.com/ponzi-dev" target="_blank">
                   <i className="fab fa-github" />
                 </a>
               </li>
@@ -105,7 +105,11 @@ const ProfileCard = () => {
                   <i className="fas fa-phone" />
                 </a>
               </li>
-
+              <li>
+                <a href="https://url.spa/l7q2o" target="_blank">
+                  <i className="fab fa-linkedin" />
+                </a>
+              </li>
             </ul>
           </div>
         </div>
