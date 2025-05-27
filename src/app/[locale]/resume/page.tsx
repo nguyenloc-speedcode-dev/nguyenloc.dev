@@ -12,7 +12,7 @@ import 'react-pdf/dist/Page/AnnotationLayer.css';
 pdfjs.GlobalWorkerOptions.workerSrc = `/files/cdnjs/pdf.worker.min.mjs`;
 
 const resumeLink =
-    "files/nguyenthanhloc_frontend.pdf";
+    "files/FrontEndDev_CV.pdf";
 
 const Resume = () => {
 

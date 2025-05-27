@@ -1,10 +1,11 @@
 'use client'
 
-import React, { useEffect, useState } from 'react'
+import React, { useEffect} from 'react'
 import MainHeader from './MainHeader'
-import useLocalStorage from '@/hooks/useLocalStorage'
 import { useStore } from '@/store/useStore'
 import MainFooter from './MainFooter'
+import ProfileCard from '../elements/ProfileCard'
+import { usePathname } from 'next/navigation'
 
 interface Props {
     children: React.ReactNode;
@@ -12,7 +13,7 @@ interface Props {
 }
 
 const MainLayout: React.FC<Props> = ({ children, theme }) => {
-
+    const pathname = usePathname()
     const { toggleDarkMode } = useStore()
 
     useEffect(() => {
@@ -28,7 +29,17 @@ const MainLayout: React.FC<Props> = ({ children, theme }) => {
         <div id="page-content">
             <MainHeader />
             <main>
-                {children}
+                <section className="content-box-area mt-4">
+                    <div className="container">
+                        <div className="row g-4">
+                            <div className="col-xl-4">
+                                <ProfileCard />
+                            </div>
+                            {children}
+                        </div>
+                    </div>
+                </section>
+
             </main>
             <MainFooter />
         </div>

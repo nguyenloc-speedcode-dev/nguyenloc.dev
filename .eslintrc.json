@@ -3,6 +3,6 @@
   "plugins": ["@typescript-eslint"],
   "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
   "rules": {
-    "no-unused-vars": "on"
+    "@typescript-eslint/no-unused-vars": ["warn"] // hoặc "error" tùy bạn
   }
 }
